@@ -1,0 +1,162 @@
+@charset "UTF-8";
+body {
+  background-color: #003a2f;
+  font-family: monospace;
+  color: #a7b2a7;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: center;
+  text-align: left;
+  padding: 5px;
+  border-bottom: 2px solid #a7b2a7;
+}
+.header h1 {
+  color: #a7b2a7;
+  margin: 0px;
+  font-size: 2rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 200px;
+}
+.nav a {
+  color: #a7b2a7;
+  font-size: 1rem;
+}
+.nav a:hover {
+  font-style: italic;
+}
+
+.side-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 200px;
+  padding: 15px;
+}
+.side-column img {
+  filter: grayscale(100%);
+}
+.side-column .updates {
+  border: 1px solid #a7b2a7;
+  padding: 15px;
+  overflow: scroll;
+}
+
+.abbie {
+  position: relative;
+  bottom: 25px;
+}
+.abbie a {
+  color: rgb(77, 219, 255);
+  font-size: 1rem;
+}
+
+li {
+  line-height: 1.7;
+  list-style-type: "⇢";
+  padding-inline-start: 1ch;
+  font-size: 1rem;
+}
+
+.columns {
+  display: flex;
+  gap: 20px;
+}
+
+.main-column {
+  width: 600px;
+  padding: 15px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-column .quote {
+  background-color: #a7b2a7;
+  color: #003a2f;
+  padding: 10px;
+  font-size: 1rem;
+}
+.main-column .bio {
+  display: flex;
+  gap: 15px;
+}
+.main-column a {
+  color: #a7b2a7;
+}
+.main-column a:hover {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 1170px) {
+  .main {
+    width: 100%;
+    padding: 0px;
+  }
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+  }
+  .side-column, .main-column {
+    width: 100%;
+    padding: 0px;
+  }
+  .nav {
+    padding: 0px;
+    width: 100%;
+  }
+  .nav a {
+    border: solid 1px #a7b2a7;
+    padding: 10px;
+  }
+  .nav a:hover {
+    background-color: #a7b2a7;
+    color: #003a2f;
+  }
+  .nav .side-column {
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .bio {
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+  }
+  .columns {
+    display: flex;
+    flex-direction: column;
+  }
+}
+p {
+  font-size: 1rem;
+}
+
+.nav {
+  position: sticky;
+}/*# sourceMappingURL=about.css.map */

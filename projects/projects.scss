@@ -1,0 +1,71 @@
+@use '../style';
+$background-color: #003a2f;
+$text-color: #a7b2a7;
+$link-color: #96e906;
+
+mark {
+    color: $background-color;
+    background-color: $text-color;
+}
+h3 {
+    margin: 5px;
+    
+}
+h4 {
+    margin: 5px;
+}
+.main-column {
+    gap: 5px;
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px;
+        text-align: center;
+        a {    
+        border: solid 1px $text-color;
+        padding: 10px;
+        }
+        a:hover {
+            background-color: $text-color;
+            color: $background-color;
+        }
+        .title {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        
+        .theater {
+            width: 80%;
+            img {
+                width: 80%;
+            }
+        }
+    }
+    
+    
+}
+ul {
+    margin-bottom: 0px;
+}
+.nav {
+    h3 {
+        text-align: left;
+    }
+}
+
+
+
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    img {
+        width: 250px;
+    }
+
+
+}

@@ -1,0 +1,167 @@
+$background-color: #003a2f;
+$text-color: #a7b2a7;
+$link-color: #96e906;
+
+
+body {
+    background-color: $background-color;
+    font-family: monospace;
+    color: $text-color;
+}
+.page {
+    display: flex;
+    justify-content: center;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    
+    justify-content: center;
+
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: center;
+    text-align: left;
+    h1 {
+        color: $text-color;
+        margin: 0px;
+        font-size: 2rem;
+    }
+    padding: 5px;
+    border-bottom: 2px solid $text-color;
+}
+.nav {
+    display: flex;
+    
+    flex-direction: column;
+    gap: 20px;
+    a {
+        color: $text-color;
+        font-size: 1rem;
+    }
+    a:hover {
+        font-style: italic;
+    }
+    width:200px;
+}
+
+.side-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 200px;
+    padding: 15px;
+    img {
+        
+        filter: grayscale(100%);
+    }
+    .updates {
+        border: 1px solid $text-color;
+        padding: 15px;
+        overflow: scroll;
+    }
+    
+}
+
+
+.abbie {
+    position: relative;
+    bottom: 25px;
+    a {
+      color: rgb(77, 219, 255);
+      font-size: 1rem ;  
+    }
+}
+
+li {
+ line-height: 1.7;
+ list-style-type: '⇢';
+ padding-inline-start: 1ch;
+ font-size: 1rem;
+}
+.columns {
+    display: flex;
+    gap: 20px;
+    
+}
+.main-column {
+    width: 600px;
+    padding: 15px;
+    .quote {
+        background-color: $text-color;
+        color: $background-color;
+        padding: 10px;
+        font-size: 1rem;
+
+    }
+    .bio {
+        display: flex;
+        gap: 15px;
+    }
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    a {
+        color: $text-color;
+
+    }
+    a:hover {
+        font-style: italic;
+    }
+}
+@media only screen and (max-width: 1170px) {
+    .main {
+        width: 100%;
+        padding: 0px;
+
+    }
+    .columns {
+       display: flex;
+       
+       flex-wrap: wrap;
+       padding: 0px;
+       margin: 0px;
+    }
+    .side-column, .main-column {
+        width: 100%;
+        padding: 0px;
+
+    }
+    .nav {
+        padding: 0px;
+        width: 100%;
+        a {
+            
+            border: solid 1px $text-color;
+            padding: 10px;
+            
+        }
+        a:hover {
+            background-color: $text-color;
+            color: $background-color;
+        }
+    .side-column {
+        padding:0px;
+        
+    }
+}
+}
+@media only screen and (max-width: 600px){
+    .bio {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        width: 100%;
+    }
+    .columns {
+        display: flex;
+        flex-direction: column;
+    }
+}
