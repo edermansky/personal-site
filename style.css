@@ -141,6 +141,9 @@ li {
   }
 }
 @media only screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
   .bio {
     display: flex;
     flex-direction: column;
